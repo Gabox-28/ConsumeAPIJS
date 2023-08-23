@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Consumo de API</title>
+
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+
+<section>
+    <h1 class="main-title">Perros tuanis</h1>
+
+    <h2 class="caption">Sube tu perrito</h2>
+
+    <div class="image-input-container">
+        <form id="uploading-form">
+            <input type="file" name="file" id="file" class="input-file" onchange="RenderPreviewImage()">
+            <label for="file">Selecciona una foto</label>
+            <img src="" alt="" class="input-preview hidden">
+            <button type="button" class="submit-button hidden" onclick="UploadDogPhoto()">Subir foto</button>
+        </form>
+    </div>
+
+</section>
+
+<section>
+    <h2 class="caption">Perros favoritos</h2>
+    <div class="favorites-cards-container">
+
+    </div>
+</section>
+
+<section>
+    <h2 class="caption">Perros aleatorios</h2>
+    <div class="cards-container">
+    </div>
+
+    <div class="button-container">
+        <button onclick="RenderDogs()">Más perros</button>
+    </div>
+</section>
+
+<script src="./main.js"></script>
+</body>
+</html>
